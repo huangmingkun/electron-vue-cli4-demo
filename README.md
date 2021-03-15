@@ -20,5 +20,7 @@ npm run build
 npm run lint
 ```
 
+[cli3+vue+electron项目搭建](https://blog.csdn.net/syx4410177/article/details/113846637)
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
