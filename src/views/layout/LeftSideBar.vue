@@ -74,7 +74,7 @@ export default {
           win.loadURL('https://www.baidu.com');
       },
       initIPCListener () {
-          // 如果在调用时候，再用ipcRenderer.on监听主进程，会导渲染进程获取多个返回值（console.log(arg)打印多次）
+          // 如果在调用时候，再用ipcRenderer.on监听主进程，会导致渲染进程获取多个返回值（console.log(arg)打印多次）
           // 因此需要在vue页面声明一次监听即可
           ipcRenderer.on('asynchronous-reply', (event, arg) => {
               console.log(arg)
